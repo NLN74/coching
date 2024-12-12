@@ -1,0 +1,165 @@
+/* style.css */
+
+
+/*Général*/
+body {
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+a {
+    color: rgb(255, 255, 255); /* Couleur par défaut des liens */
+    text-decoration: none; /* Supprime le soulignement */
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255); /* Empêche la couleur de changer après avoir cliqué */
+  }
+  
+  a:hover {
+    color: rgb(255, 255, 255); /* Couleur des liens au survol */
+    text-shadow: rgb(50,0,157) 1px 0px 15px;
+  }
+  
+li{
+    list-style: none;
+}
+  
+/*Header*/
+
+.head{
+    background-image: url(assets/images/fond.png);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Times, Times, serif;
+    
+    padding-bottom: 15px;
+}
+
+header img{ 
+    width: 10%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.navbar{
+    margin-right: 5em;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.navbar ul li{
+    font-size: 1.5em;
+    margin-left: 1.5em;
+}
+
+/*Section présentation*/
+
+.presentation{
+    /*background-color: rgb(255, 201, 210);*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 21em;
+
+}
+
+.presentation h1{
+    font-family: Apple Chancery;
+    font-size: 3em;
+    text-shadow: rgb(139, 139, 139) 1px 0 10px;
+}
+
+.presentation h2{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2em;
+    font-family: Courier New, monospace;
+    text-shadow: rgb(85, 85, 85) 1px 0 10px;
+}
+
+.presentation a{
+    font-size: 1.1em;
+    background-color: rgb(113,60,52);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(113,60,52);
+}
+
+.presentation a:hover{
+    padding: 12px;
+}
+
+
+/*Service simple*/
+
+.services{
+    color: rgb(113,60,52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.services h3{
+    font-size: 2em;
+}
+
+
+.testbox{
+       width: 70%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+figure {
+    display: flex;
+    flex-flow: column;
+    margin-left: 50px;
+    padding: 0px;
+    max-width: 300px;
+    margin: 0;
+
+  }
+  
+  figure img {
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 10px rgb(210, 210, 210);
+  }
+  
+  figcaption {
+  
+    color: #fff;
+    font: italic smaller sans-serif;
+    font-size: 1.3em;
+    margin-top: -35%;
+    text-align: center;
+    font-family: Apple Chancery;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  footer{
+    margin: 150px;
+  }
